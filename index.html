@@ -232,6 +232,42 @@
               
               <div class="relative wrap overflow-hidden p-10 h-full">
                 <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+
+                                <!-- New Project 1 -->
+                                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                                  <div class="order-1 w-5/12"></div>
+                                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                    <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                                  </div>
+                                  <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="aiChatbot">
+                                    <h3 class="mb-3 font-bold text-gray-800 text-xl">AI-Powered Multilingual Chatbot - Headstarter</h3>
+                                    <p class="text-sm leading-snug tracking-wide text-gray-600">A sophisticated AI chatbot using Next.js, supporting English, French, and German.</p>
+                                  </div>
+                                </div>
+                
+                                <!-- New Project 2 -->
+                                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                                  <div class="order-1 w-5/12"></div>
+                                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                    <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+                                  </div>
+                                  <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="smartShelf">
+                                    <h3 class="mb-3 font-bold text-gray-800 text-xl">SmartShelf - Headstarter</h3>
+                                    <p class="text-sm leading-snug tracking-wide text-gray-600">An advanced image classification system for pantry items using computer vision.</p>
+                                  </div>
+                                </div>
+                
+                                <!-- New Project 3 -->
+                                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                                  <div class="order-1 w-5/12"></div>
+                                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                    <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                                  </div>
+                                  <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="flashcardApp">
+                                    <h3 class="mb-3 font-bold text-gray-800 text-xl">FlashGenie - Headstarter</h3>
+                                    <p class="text-sm leading-snug tracking-wide text-gray-600">An AI-powered flashcard application for enhanced learning experiences.</p>
+                                  </div>
+                                </div>
                 
                 <!-- Project 1 -->
                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
@@ -291,8 +327,39 @@
                 const modal = document.getElementById('projectModal');
                 const modalContent = document.getElementById('modalContent');
                 const closeModal = document.getElementById('closeModal');
+
+                
             
                 const projectDetails = {
+                  aiChatbot: `
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">AI-Powered Multilingual Chatbot</h2>
+                    <p class="text-lg mb-6 text-gray-600">A sophisticated AI chatbot using Next.js, supporting English, French, and German.</p>
+                    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                      <h3 class="text-xl font-semibold mb-3 text-gray-700">Project Overview</h3>
+                      <p class="mb-4">Increased query response accuracy by 20% by developing a sophisticated AI chatbot using Next.js, implementing Retrieval Augmented Generation (RAG), and integrating multiple AI models.</p>
+                      <p>Engineered a custom LLM routing mechanism leveraging Groq's Mixtral-8x7B and OpenAI's GPT-4o, optimizing response times and expanding the chatbot's knowledge base for contextually relevant responses.</p>
+                      <p>Deployed the chatbot on AWS EC2 and integrated AWS Bedrock for AI services, significantly improving scalability and reducing operational costs compared to on-premise solutions.</p>
+                    </div>
+                  `,
+                  smartShelf: `
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">SmartShelf</h2>
+                    <p class="text-lg mb-6 text-gray-600">An advanced image classification system for pantry items using computer vision.</p>
+                    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                      <h3 class="text-xl font-semibold mb-3 text-gray-700">Project Overview</h3>
+                      <p class="mb-4">Implemented an advanced image classification system using OpenAI's Vision model API and Google Cloud's Vertex AI, achieving 90% accuracy in recognizing and categorizing pantry items from user-uploaded images.</p>
+                      <p>This project streamlines inventory management and demonstrates practical application of computer vision techniques.</p>
+                    </div>
+                  `,
+                  flashcardApp: `
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">FlashGenie</h2>
+                    <p class="text-lg mb-6 text-gray-600">An AI-powered flashcard application for enhanced learning experiences.</p>
+                    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                      <h3 class="text-xl font-semibold mb-3 text-gray-700">Project Overview</h3>
+                      <p class="mb-4">Developed a full-stack AI-powered flashcard application using Next.js and React, integrating OpenAI's GPT-4 API for automated content generation.</p>
+                      <p>This resulted in a 20% increase in user engagement and study efficiency.</p>
+                      <p>Implemented secure user authentication with Clerk and integrated Stripe for payment processing, leading to a 15% increase in premium subscriptions and improved overall application security.</p>
+                    </div>
+                  `,
                   recipeMate: `
                     <h2 class="text-3xl font-bold mb-4 text-gray-800">RecipeMate</h2>
                     <p class="text-lg mb-6 text-gray-600">A robust recipe recommendation system leveraging TF-IDF vectorization and OpenAI's GPT-3.5-turbo model.</p>
