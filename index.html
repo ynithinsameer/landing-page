@@ -33,7 +33,7 @@
 
     <body class="bg-gradient-to-r from-gray-100 to-gray-200">
         <!-- Navigation Popup -->
-        <div id="navPopup" class="fixed inset-0 bg-gray-900 bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <!-- <div id="navPopup" class="fixed inset-0 bg-gray-900 bg-opacity-50 z-50 hidden flex items-center justify-center">
           <div class="bg-white rounded-lg p-8 max-w-md w-full">
             <div class="flex justify-between items-center mb-6">
               <h2 class="text-2xl font-bold text-gray-800">Navigation</h2>
@@ -53,11 +53,65 @@
               <a href="#ai-journey" class="block w-full text-center py-2 px-4 bg-gray-200 hover:bg-gray-300 rounded transition duration-300">AI Journey</a>
             </div>
           </div>
-        </div>
+        </div> -->
+      
+        <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+          <div class="container max-w-screen-xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+              <!-- Logo/Home -->
+              <div class="flex items-center">
+                <a href="#home" class="flex items-center">
+                  <img src="assets/icons/flash.png" alt="Logo" class="w-8 h-8 transform hover:rotate-12 transition-transform duration-300">
+                  <span class="ml-2 font-semibold text-gray-800">Nithin Sameer</span>
+                </a>
+              </div>
+        
+              <!-- Navigation Links - Hidden on mobile -->
+              <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Home</a>
+                <a href="#skills" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Skills</a>
+                <a href="#experience" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Experience</a>
+                <a href="#projects" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Projects</a>
+                <a href="#milestones" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Milestones</a>
+                <a href="#publications" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Publications</a>
+                <a href="#ai-journey" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">AI Journey</a>
+              </div>
+        
+              <!-- Resume Button -->
+              <div class="flex items-center">
+                <a href="assets/Nithin_Sameer_Yerramilli_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <button class="px-4 py-2 bg-gradient-to-r from-gray-700 to-gray-900 text-white text-sm rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
+                    Resume
+                  </button>
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden ml-4 text-gray-600 hover:text-gray-900 focus:outline-none" id="mobileMenuButton">
+                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+        
+            <!-- Mobile menu, show/hide based on menu state -->
+            <div class="md:hidden hidden" id="mobileMenu">
+              <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">Home</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">Skills</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">Experience</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">Projects</a>
+                <a href="#milestones" class="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">Milestones</a>
+                <a href="#publications" class="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">Publications</a>
+                <a href="#ai-journey" class="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">AI Journey</a>
+              </div>
+            </div>
+          </div>
+        </nav>
         
       <section id="home" class="py-10 md:py-16">
         <div class="container max-w-screen-xl mx-auto px-4">
-          <nav class="flex items-center justify-between mb-8 md:mb-12">
+          <!-- <nav class="flex items-center justify-between mb-8 md:mb-12">
             <button id="openNavPopup" class="focus:outline-none">
               <img src="assets/icons/flash.png" alt="Logo" class="w-12 h-12 md:w-16 md:h-16 transform hover:rotate-12 transition-transform duration-300">
             </button>
@@ -65,7 +119,7 @@
             <a href="assets/Nithin_Sameer_Yerramilli_v5.pdf" target="_blank" rel="noopener noreferrer">
               <button class="px-5 py-2 md:px-7 md:py-3 bg-gradient-to-r from-gray-700 to-gray-900 font-medium text-white text-sm md:text-md rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">Resume</button>
             </a>
-          </nav>              
+          </nav>               -->
       
           <div class="text-center">
             <div class="flex justify-center mb-6 md:mb-10">
@@ -131,99 +185,77 @@
                     </svg>
                   </div>
                   <h4 class="font-semibold text-gray-800 text-xl mb-4">Innovative Projects</h4>
-                  <p class="text-gray-600">Successfully developed and implemented projects like RecipeMate, a recipe recommendation system, and a Celestial Object Classification model. Passionate about creating AI-driven solutions to real-world problems.</p>
+                  <p class="text-gray-600">Successfully developed and implemented projects like AI-Powered Multilingual Chatbot, a recipe recommendation system, and Recidivism Prediction Model. Passionate about creating AI-driven solutions to real-world problems.</p>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- Work Experience Section -->
-          <section id="experience" class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
-            <div class="container max-w-screen-xl mx-auto px-4">
-              <h2 class="font-bold text-gray-800 text-3xl md:text-5xl mb-12 text-center">Work Experience</h2>
-              
-              <div class="space-y-12">
-                <!-- Graduate Research Assistant -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div class="md:flex">
-                    <div class="md:flex-shrink-0 bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-4 md:w-48 flex items-center justify-center">
-                      <div class="text-center">
-                        <div class="text-2xl font-bold">GMU</div>
-                        <div class="text-sm">Research</div>
+            <!-- Work Experience Section -->
+            <section id="experience" class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
+              <div class="container max-w-screen-xl mx-auto px-4">
+                <h2 class="font-bold text-gray-800 text-3xl md:text-5xl mb-12 text-center">Work Experience</h2>
+                
+                <div class="space-y-12">
+                  <!-- Data Analyst Intern -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="md:flex">
+                      <div class="md:flex-shrink-0 bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-4 md:w-48 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-2xl font-bold">GMU</div>
+                          <div class="text-sm">Graduate Studies</div>
+                        </div>
+                      </div>
+                      <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">August 2024 - Present</div>
+                        <h3 class="mt-1 text-2xl leading-tight font-medium text-black">Data Analyst Intern</h3>
+                        <p class="mt-2 text-gray-600">Implementing machine learning models to analyze student admission data, improving prediction accuracy by 23%.</p>
+                        <p class="mt-2 text-gray-600">Creating interactive dashboards using Tableau (Salesforce) to visualize key metrics, increasing data accessibility and enabling data-driven student engagement strategies.</p>
+                        <p class="mt-2 text-gray-600">Executed 5 interactive Salesforce dashboards, improving stakeholder data accessibility and enabling more informed decision-making through visualized key metrics and trends.</p>
                       </div>
                     </div>
-                    <div class="p-8">
-                      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">August 2023 - Present</div>
-                      <h3 class="mt-1 text-2xl leading-tight font-medium text-black">Graduate Research Assistant</h3>
-                      <p class="mt-2 text-gray-500">Costello College of Business (GMU)</p>
-                      <p class="mt-4 text-gray-600">At GMU's Costello College of Business, I've been diving deep into data analysis using R. My work focuses on uncovering demographic trends through advanced techniques like KNN imputation and variable matching.</p>
-                      <p class="mt-2 text-gray-600">One of my key projects involved analyzing the impact of app bans on Indian household spending. Using statistical methods like CEM, regression with survey weighting, and difference-in-difference analysis, I discovered a 12% drop in spending post-ban. This project showcased the real-world implications of tech policies on economic behavior.</p>
-                      <p class="mt-2 text-gray-600">I've also been busy with web scraping using Selenium, gathering and formatting data to validate academic research. This work has sharpened my skills in data collection and preprocessing, crucial steps in any data science workflow.</p>
+                  </div>
+
+                  <!-- Data Scientist - Capstone -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="md:flex">
+                      <div class="md:flex-shrink-0 bg-gradient-to-br from-green-500 to-teal-600 text-white p-4 md:w-48 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-2xl font-bold">Erasmus.AI</div>
+                          <div class="text-sm">Capstone</div>
+                        </div>
+                      </div>
+                      <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-teal-500 font-semibold">August 2024 - December 2024</div>
+                        <h3 class="mt-1 text-2xl leading-tight font-medium text-black">Data Scientist</h3>
+                        <p class="mt-2 text-gray-600">Built ClimateGPT's core function calling architecture using Python, enabling the AI model to execute 60+ specialized climate analysis functions through a unified tool interface.</p>
+                        <p class="mt-2 text-gray-600">Developed an intelligent query router and flexible tool calling system that allows ClimateGPT to analyze climate data from NOAA, NASA and World Bank databases through natural language queries.</p>
+                        <p class="mt-2 text-gray-600">Led technical design decisions as Product Owner in an Agile team of 4, implementing modular data processing pipelines that power ClimateGPT's automated climate impact analysis capabilities.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Machine Learning Research Associate -->
+                  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="md:flex">
+                      <div class="md:flex-shrink-0 bg-gradient-to-br from-purple-500 to-pink-600 text-white p-4 md:w-48 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-2xl font-bold">GMU</div>
+                          <div class="text-sm">Research</div>
+                        </div>
+                      </div>
+                      <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-pink-500 font-semibold">August 2023 - August 2024</div>
+                        <h3 class="mt-1 text-2xl leading-tight font-medium text-black">Machine Learning Research Associate</h3>
+                        <p class="mt-2 text-gray-600">Led advanced statistical analyses on India's largest household survey dataset (174,000+ households across 27 states) using R and Python, uncovering a 12% decrease in spending patterns post-app bans through CEM, difference-in-difference analysis, and regression with survey weighting.</p>
+                        <p class="mt-2 text-gray-600">Designed and implemented machine learning models achieving 85% accuracy in forecasting consumer behavior trends. Optimized big data preprocessing workflows using PySpark, enhancing efficiency for downstream ML tasks.</p>
+                        <p class="mt-2 text-gray-600">Validated results from Research papers and Journals. Communicated findings to stakeholders detailing KPI's.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- Graduate Teaching Assistant -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div class="md:flex">
-                    <div class="md:flex-shrink-0 bg-gradient-to-br from-green-500 to-teal-600 text-white p-4 md:w-48 flex items-center justify-center">
-                      <div class="text-center">
-                        <div class="text-2xl font-bold">GMU</div>
-                        <div class="text-sm">Teaching</div>
-                      </div>
-                    </div>
-                    <div class="p-8">
-                      <div class="uppercase tracking-wide text-sm text-teal-500 font-semibold">August 2023 - Present</div>
-                      <h3 class="mt-1 text-2xl leading-tight font-medium text-black">Graduate Teaching Assistant (AI/ML)</h3>
-                      <p class="mt-2 text-gray-500">Volgenau School of Engineering (GMU)</p>
-                      <p class="mt-4 text-gray-600">Over at the Volgenau School of Engineering, I'm helping shape the next generation of AI/ML professionals. My role involves guiding students through the complexities of data mining algorithms, and it's been rewarding to see their improved assignment scores reflect their growing understanding.</p>
-                      <p class="mt-2 text-gray-600">Beyond the technical aspects, I've been deeply involved in exploring AI ethics. I've evaluated over 150 student essays on AI implications, gaining valuable insights into emerging perspectives on this critical topic. This experience has broadened my view of AI's role in society and reinforced the importance of responsible tech development.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Programmer Analyst -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div class="md:flex">
-                    <div class="md:flex-shrink-0 bg-gradient-to-br from-purple-500 to-pink-600 text-white p-4 md:w-48 flex items-center justify-center">
-                      <div class="text-center">
-                        <div class="text-2xl font-bold">Cognizant</div>
-                        <div class="text-sm">Analysis</div>
-                      </div>
-                    </div>
-                    <div class="p-8">
-                      <div class="uppercase tracking-wide text-sm text-pink-500 font-semibold">February 2022 - July 2022</div>
-                      <h3 class="mt-1 text-2xl leading-tight font-medium text-black">Programmer Analyst</h3>
-                      <p class="mt-2 text-gray-500">Cognizant</p>
-                      <p class="mt-4 text-gray-600">At Cognizant, I hit the ground running as a Programmer Analyst supporting a 25-person data science team. This role was a crash course in applied data science, where I contributed to project documentation, dataset analysis, and operational support.</p>
-                      <p class="mt-2 text-gray-600">I got hands-on experience with data mining and basic modeling projects, developing skills in exploratory data analysis, statistics, and machine learning. A key part of my role was translating complex findings into clear presentations and prototypes, honing my ability to communicate technical concepts effectively.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Data Analyst Intern -->
-                <!-- <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div class="md:flex">
-                    <div class="md:flex-shrink-0 bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-4 md:w-48 flex items-center justify-center">
-                      <div class="text-center">
-                        <div class="text-2xl font-bold">TSF</div>
-                        <div class="text-sm">Internship</div>
-                      </div>
-                    </div>
-                    <div class="p-8">
-                      <div class="uppercase tracking-wide text-sm text-orange-500 font-semibold">January 2021 - February 2021</div>
-                      <h3 class="mt-1 text-2xl leading-tight font-medium text-black">Data Analyst Intern</h3>
-                      <p class="mt-2 text-gray-500">The Sparks Foundation</p>
-                      <p class="mt-4 text-gray-600">My internship at The Sparks Foundation kickstarted my journey in data analysis. Here, I tackled real-world datasets, focusing on cleaning, exploration, and pattern recognition.</p>
-                      <p class="mt-2 text-gray-600">A highlight of this experience was improving prediction accuracy by 13% through enhanced data visualization techniques. This project not only boosted my technical skills but also showed me the tangible impact of effective data analysis.</p>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
-              <p class="mt-12 text-gray-600 text-center">Throughout these roles, I've continuously expanded my data science toolkit and problem-solving abilities. Each position has fueled my passion for using data to drive insights and innovation. I'm excited to bring this combination of technical skills and analytical thinking to new challenges in the field.</p>
-            </div>
-          </section>
+              </div>
+            </section>
 
           <section id="projects" class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
             <div class="container max-w-screen-xl mx-auto px-4">
@@ -237,7 +269,7 @@
                                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
                                   <div class="order-1 w-5/12"></div>
                                   <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                    <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
                                   </div>
                                   <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="aiChatbot">
                                     <h3 class="mb-3 font-bold text-gray-800 text-xl">AI-Powered Multilingual Chatbot - Headstarter</h3>
@@ -249,7 +281,7 @@
                                 <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                                   <div class="order-1 w-5/12"></div>
                                   <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                    <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+                                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
                                   </div>
                                   <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="smartShelf">
                                     <h3 class="mb-3 font-bold text-gray-800 text-xl">SmartShelf - Headstarter</h3>
@@ -261,7 +293,7 @@
                                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
                                   <div class="order-1 w-5/12"></div>
                                   <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                    <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
                                   </div>
                                   <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="flashcardApp">
                                     <h3 class="mb-3 font-bold text-gray-800 text-xl">FlashGenie - Headstarter</h3>
@@ -273,7 +305,7 @@
                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
                   <div class="order-1 w-5/12"></div>
                   <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
                   </div>
                   <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="recipeMate">
                     <h3 class="mb-3 font-bold text-gray-800 text-xl">RecipeMate</h3>
@@ -285,7 +317,7 @@
                 <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                   <div class="order-1 w-5/12"></div>
                   <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
                   </div>
                   <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="celestialObject">
                     <h3 class="mb-3 font-bold text-gray-800 text-xl">Celestial Object Classification</h3>
@@ -297,7 +329,7 @@
                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
                   <div class="order-1 w-5/12"></div>
                   <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
                   </div>
                   <div class="order-1 bg-gray-200 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:shadow-2xl transition-shadow duration-300 cursor-pointer project-item" data-project="recidivismModel">
                     <h3 class="mb-3 font-bold text-gray-800 text-xl">Recidivism Prediction Model</h3>
@@ -513,7 +545,7 @@
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 transition-transform duration-300">
                   <div class="text-4xl mb-6">🎓</div>
-                  <h3 class="font-semibold text-gray-800 text-xl mb-3">Aug 2022 - Present</h3>
+                  <h3 class="font-semibold text-gray-800 text-xl mb-3">Jan 2023 - Dec 2024</h3>
                   <h4 class="font-medium text-gray-700 mb-4">Masters in Data Analytics Engineering</h4>
                   <p class="text-gray-600">Pursuing advanced studies at George Mason University with a stellar GPA of 3.96/4.0, focusing on cutting-edge data analytics techniques and AI applications.</p>
                 </div>
@@ -729,6 +761,44 @@
                   targetElement.scrollIntoView({ behavior: 'smooth' });
                 }
               });
+            });
+          });
+        </script>
+
+        <script>
+          // Mobile menu toggle
+          const mobileMenuButton = document.getElementById('mobileMenuButton');
+          const mobileMenu = document.getElementById('mobileMenu');
+
+          mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+
+          // Close mobile menu when clicking a link
+          const mobileLinks = mobileMenu.querySelectorAll('a');
+          mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+              mobileMenu.classList.add('hidden');
+            });
+          });
+
+          // Add padding to body to account for fixed navbar
+          document.body.style.paddingTop = '4rem';
+
+          // Smooth scroll for navigation links
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+              if (targetElement) {
+                const navbarHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = targetElement.offsetTop - navbarHeight;
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth'
+                });
+              }
             });
           });
         </script>
